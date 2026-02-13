@@ -21,7 +21,9 @@ def calcular_faturamento_entregue(lista_pedidos):
             for item in pedido["itens"]:
                 valor_total = valor_total + (item["preco"] * item["qtd"])
 
-    print(f"O valor total dos pedidos entregues é {valor_total}")
+    return valor_total
 
 
-calcular_faturamento_entregue(pedidos)
+print(
+    f"O valor total dos pedidos entregues é R$ {calcular_faturamento_entregue(pedidos)}"
+)
