@@ -18,7 +18,7 @@ def calcular_faturamento_entregue(lista_pedidos):
     valor_total = 0
     for pedido in lista_pedidos:
         if pedido["status"] == "entregue":
-            for item in pedido["itens"]:
+            for item in pedido.get("itens", []):
                 valor_total = valor_total + (item["preco"] * item["qtd"])
 
     return valor_total
