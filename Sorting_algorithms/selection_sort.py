@@ -1,17 +1,17 @@
-lista = [7, 12, 9, 11, 3]
+array = [7, 12, 9, 11, 3]
 
 
-def selection_sort(lista):
-    n = len(lista)
+def selection_sort(array):
+    n = len(array)
 
     for i in range(n - 1):
         min_index = i
 
         for j in range(i + 1, n):
-            if lista[j] < lista[min_index]:
+            if array[j] < array[min_index]:
                 min_index = j
-        lista[i], lista[min_index] = lista[min_index], lista[i]
-    return lista
+        array[i], array[min_index] = array[min_index], array[i]
+    return array
 
 
-print(selection_sort(lista))
+print(selection_sort(array))

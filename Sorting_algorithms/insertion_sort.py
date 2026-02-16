@@ -2,20 +2,20 @@ array = [64, 34, 25, 12, 22, 11, 90, 5]
 
 
 def insertion_sort(arr):
-    n = len(array)
+    n = len(arr)
 
     for i in range(1, n):
-        insert_index = array[i]
+        key = arr[i]
         j = i - 1
 
         for j in range(j, -1, -1):
-            if array[j] > insert_index:
-                array[j + 1] = array[j]
+            if arr[j] > key:
+                arr[j + 1] = arr[j]
                 j -= 1
 
-        array[j + 1] = insert_index
+        arr[j + 1] = key
 
-    return array
+    return arr
 
 
 print(insertion_sort(array))
