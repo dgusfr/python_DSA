@@ -8,10 +8,9 @@ def insertion_sort(arr):
         key = arr[i]
         j = i - 1
 
-        for j in range(j, -1, -1):
-            if arr[j] > key:
-                arr[j + 1] = arr[j]
-                j -= 1
+        while j >= 0 and arr[j] > key:
+            arr[j + 1] = arr[j]
+            j -= 1
 
         arr[j + 1] = key
 
