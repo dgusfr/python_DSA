@@ -1,14 +1,14 @@
 array = [7, 12, 9, 11, 3]
 
 
-def bubble_sort(array):
-    n = len(array)
+def bubble_sort(arr):
+    n = len(arr)
 
     for i in range(0, n - 1):
         for j in range(0, n - i - 1):
-            if array[j] > array[j + 1]:
-                array[j], array[j + 1] = array[j + 1], array[j]
-    return array
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+    return arr
 
 
 print(bubble_sort(array))
