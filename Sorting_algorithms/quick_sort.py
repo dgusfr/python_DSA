@@ -16,7 +16,7 @@ def quick_sort(arr, start=0, end=None):
 
 def partition(arr, start, end):
     pivot = arr[end]
-    i = start
+    i = start - 1
 
     for j in range(start, end):
         if arr[j] <= pivot:
@@ -24,4 +24,8 @@ def partition(arr, start, end):
             arr[i], arr[j] = arr[j], arr[i]
 
     arr[i + 1], arr[end] = arr[end], arr[i + 1]
+
     return i + 1
+
+
+print(quick_sort(array))
