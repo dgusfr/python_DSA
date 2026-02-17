@@ -11,7 +11,7 @@ def merge_sort(arr, start=0, end=None):
 
         merge(arr, start, mid, end)
 
-        return arr
+    return arr
 
 
 def merge(arr, start, mid, end):
