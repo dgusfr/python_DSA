@@ -10,54 +10,54 @@ class LinkedList:
         return self._size
 
     def __getitem__(self, posicao_desejada):
-        ponteiro = self.head
+        pointer = self.head
         for i in range(posicao_desejada):
-            if ponteiro:
-                ponteiro = ponteiro.next
+            if pointer:
+                pointer = pointer.next
             else:
                 raise IndexError("list index out of range")
-        if ponteiro:
-            return ponteiro.data
+        if pointer:
+            return pointer.data
         raise IndexError("list index out of range")
 
     def __setitem__(self, posicao_desejada, elemento):
-        ponteiro = self.head
+        pointer = self.head
         for i in range(posicao_desejada):
-            if ponteiro:
-                ponteiro = ponteiro.next
+            if pointer:
+                pointer = pointer.next
             else:
                 raise IndexError("list index out of range")
-        if ponteiro:
-            ponteiro.data = elemento
+        if pointer:
+            pointer.data = elemento
         else:
             raise IndexError("list index out of range")
 
     def index(self, elemento):
-        ponteiro = self.head
+        pointer = self.head
         indice = 0
-        while ponteiro:
-            if ponteiro.data == elemento:
+        while pointer:
+            if pointer.data == elemento:
                 return indice
-            ponteiro = ponteiro.next
+            pointer = pointer.next
             indice = indice + 1
         raise ValueError("{} is not in list".format(elemento))
 
     def _getnode(self, index: int):
         if index < 0 or index >= self._size:
             raise IndexError("list index out of range")
-        ponteiro = self.head
+        pointer = self.head
         for _ in range(index):
-            if ponteiro is None:
+            if pointer is None:
                 raise IndexError("list index out of range")
-            ponteiro = ponteiro.next
-        return ponteiro
+            pointer = pointer.next
+        return pointer
 
     def insere_final_lista(self, elemento):
         if self.head:
-            ponteiro = self.head
-            while ponteiro.next:
-                ponteiro = ponteiro.next
-            ponteiro.next = Node(elemento)
+            pointer = self.head
+            while pointer.next:
+                pointer = pointer.next
+            pointer.next = Node(elemento)
         else:
             self.head = Node(elemento)
         self._size = self._size + 1
@@ -87,23 +87,23 @@ class LinkedList:
             return True
         else:
             ancestor = self.head
-            ponteiro = self.head.next
-            while ponteiro:
-                if ponteiro.data == elem:
-                    ancestor.next = ponteiro.next
-                    ponteiro.next = None
+            pointer = self.head.next
+            while pointer:
+                if pointer.data == elem:
+                    ancestor.next = pointer.next
+                    pointer.next = None
                     self._size = self._size - 1
                     return True
-                ancestor = ponteiro
-                ponteiro = ponteiro.next
+                ancestor = pointer
+                pointer = pointer.next
         raise ValueError("{} is not in list".format(elem))
 
     def __repr__(self):
         r = ""
-        ponteiro = self.head
-        while ponteiro:
-            r = r + str(ponteiro.data) + "->"
-            ponteiro = ponteiro.next
+        pointer = self.head
+        while pointer:
+            r = r + str(pointer.data) + "->"
+            pointer = pointer.next
         return r
 
     def __str__(self):
