@@ -624,3 +624,5 @@ ___
 
 # Estruturas de Dados Avançadas
 
+## Listas Ligadas, Pilhas, Filas, Árvores, Grafos, etc. (a ser desenvolvido)
+
