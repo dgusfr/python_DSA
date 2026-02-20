@@ -1,5 +1,3 @@
-# Desenvolva um algoritmo que permita ao usuário calcular a média ponderada e harmônica de três notas.
-
 calculate = input("Enter either 'w' for weighted or 'h' for harmonic: ")
 if calculate == "w":
     grade1 = float(input("Enter the first grade: "))
