@@ -23,3 +23,4 @@ elif calculate == "h":
     print(f"The harmonic average is: {harmonic_average}")
 
 else:
+    print("Invalid option. Please enter 'w' for weighted or 'h' for harmonic.")
