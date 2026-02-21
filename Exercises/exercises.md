@@ -8,6 +8,7 @@
 * **Cálculo de Média com Opções:** `average_with_options.py`
 * **Cálculo de Salário Líquido:** `net_salary.py`
 * **Cálculo do IMC:** `bmi_calculator.py`
+
 * **Conversão de Temperaturas:** `temperature_conversion.py`
 * **Cálculo da Idade em Dias:** `age_in_days.py`
 * **Conversão de Tempo:** `time_conversion.py`
