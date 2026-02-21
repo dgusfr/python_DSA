@@ -1,5 +1,3 @@
-"""Desenvolva um algoritmo que recebe o valor da massa (em kg) e o valor da altura (em metros) de uma pessoa e retorne o valor do IMC (Índice de Massa Corporal), calculado pela seguinte expressão:"""
-
 weight = float(input("Digite o peso em kg: "))
 height = float(input("Digite a altura em metros: "))
 
