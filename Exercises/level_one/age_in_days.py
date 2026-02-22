@@ -1,7 +1,3 @@
-"""
-Desenvolva um algoritmo que leia a data de nascimento de uma pessoa (dia, mês e ano) e a data atual (dia, mês e ano). O algoritmo deve calcular a idade dessa pessoa em dias e quantos anos ela tem com base na data atual. Considere que um ano tem 365 dias e um mês tem 30 dias para simplificar os cálculos.
-"""
-
 age = input("Digite sua data de nascimento: (dd/mm/aaaa): ")
 current_date = input("Digite a data atual: (dd/mm/aaaa): ")
 
