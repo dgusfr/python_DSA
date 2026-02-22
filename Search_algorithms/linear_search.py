@@ -11,7 +11,7 @@ def linear_search(arr, targetVal):
 
 result = linear_search(array, value)
 
-if result != -1:
+if result != None:
     print(f"Found in index: {result}")
 else:
     print("Value not found in the array.")
