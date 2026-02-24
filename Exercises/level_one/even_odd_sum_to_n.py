@@ -1,8 +1,3 @@
-"""
-Desenvolva um algoritmo que recebe um número N inteiro positivo e calcule a soma dos números inteiros pares e a soma dos inteiros ímpares de 1 até N.
-
-"""
-
 n = int(input("Digite um número inteiro: "))
 
 soma_pares = 0
