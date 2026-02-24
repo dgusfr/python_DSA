@@ -5,7 +5,6 @@ def is_leap_year(year):
         return False
 
 
-# Exemplo de uso
 year = int(input("Digite um ano: "))
 if is_leap_year(year):
     print(f"{year} é um ano bissexto.")
