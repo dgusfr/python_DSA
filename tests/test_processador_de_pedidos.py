@@ -1,5 +1,5 @@
 import pytest
-from Exercises.skills.Processador_de_Pedidos import calcular_faturamento_entregue
+from Exercises.skills.processador_de_pedidos import calcular_faturamento_entregue
 
 # Estrutura: (Entrada, Saída Esperada)
 cenarios_de_teste = [
