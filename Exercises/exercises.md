@@ -31,7 +31,6 @@
 * **Triângulo de Floyd:** `floyds_triangle.py`
 * **Cálculo de Somatório: Iteração vs. Recursão:** `summation_iter_vs_rec.py`
 * **Determinação de Fatorial Inverso:** `inverse_factorial.py`
-* **Número cujo Fatorial:** `inverse_factorial_v2.py` *(Mantido com sufixo v2 por ser o mesmo exercício anterior)*
 
 ### Avançado
 
