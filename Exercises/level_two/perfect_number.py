@@ -1,7 +1,3 @@
-"""
-Escreva um algoritmo que verifique se um número é perfeito. Um número perfeito é um número inteiro que é igual à soma de seus divisores exceto ele mesmo. Exemplo: o número 6, onde 1 + 2 + 3 = 6.
-"""
-
 number = int(input("Digite um número inteiro: "))
 
 
@@ -14,10 +10,7 @@ def is_perfect(n):
         if n % i == 0:
             divisors_sum += i
 
-    if divisors_sum == n:
-        return True
-    else:
-        return False
+    return divisors_sum == n
 
 
 if is_perfect(number):
