@@ -2,8 +2,8 @@ cpf = input("Digite os nove primeiros números do CPF (sem pontos ou traços): "
 cpf_numbers = []
 
 try:
-    numbers = int(cpf)
-    cpf_numbers.append(numbers)
+    for n in cpf:
+        cpf_numbers.append(int(n))
     print(f"List after adding number: {cpf_numbers}")
 except ValueError:
     print("Invalid input! Please enter a valid integer.")
@@ -13,18 +13,17 @@ def calculate_cpf_digits(cpf_numbers):
     v1 = 0
     v2 = 0
 
-    for i in range(0, len(cpf_numbers)):
-        for j in range(10, 1, -1):
-            v1 = v1 + (cpf_numbers[i] * j)
+    for i in range(9):
+        v1 = v1 + (cpf_numbers[i] * (10 - i))
 
     if v1 % 11 < 2:
         v10 = 0
     else:
         v10 = 11 - (v1 % 11)
 
-    for i in range(0, len(cpf_numbers)):
-        for j in range(11, 1, -1):
-            v2 = v2 + (cpf_numbers[i] * j)
+    for i in range(9):
+        v2 += cpf_numbers[i] * (11 - i)
+    v2 += v10 * 2
 
     if v2 % 11 < 2:
         v11 = 0
