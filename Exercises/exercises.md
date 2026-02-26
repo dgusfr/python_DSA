@@ -35,7 +35,7 @@
 ### Avançado
 
 * **Validação de CPF:** `cpf_validation.py`
-* **Números Amigos:** `amicable_numbers.py`
+* **Números Amigos:** `friend_number.py`
 * **Diamante:** `diamond_pattern.py`
 * **Análise Completa e Classificação de Triângulos:** `complete_triangle_analysis.py`
 * **Relação de Recorrência e Análise de Árvore Recursiva:** `recurrence_tree_analysis.py`
