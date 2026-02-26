@@ -1,9 +1,15 @@
-"""
-g = lambda n: 1 if n == 0 else 3 if n == 1 else 2 * g(n-1) if n < 4 else g(n-1) + g(n-2)
-"""
+cont_b = 0
+cont_g4 = 0
 
 
 def g(n):
+    global cont_b, cont_g4
+
+    cont_b += 1
+    if n == 4:
+        cont_g4 += 1
+
+    # Lógica da função g(n)
     if n == 0:
         return 1
     elif n == 1:
@@ -14,11 +20,15 @@ def g(n):
         return g(n - 1) + g(n - 2)
 
 
-n = int(input("Digite um número inteiro não negativo: "))
-result = g(n)
-print(f"O resultado de g({n}) é: {result}")
+val_a = g(10)
+cont_b = 0
+g(12)
+resp_b = cont_b
 
+cont_g4 = 0  # Reset para contar apenas g(4) dentro de g(18)
+g(18)
+resp_c = cont_g4
 
-# a) Qual é o valor numérico resultante da chamada g(10)?
-# b) Quantas vezes a função g é chamada no total para concluir o cálculo de g(12)?
-# c) Quantas vezes a sub-chamada g(4) é executada durante a árvore de resolução de g(18)?
+print(f"a) Valor de g(10) = {val_a}")
+print(f"b) Número de chamadas de g(12) = {resp_b}")
+print(f"c) Número de chamadas de g(4) dentro de g(18) = {resp_c}")
