@@ -1,5 +1,4 @@
-idade = 20
-status = "Permitido" if idade >= 18 else "Negado"
+tupla = ("a", "b", "c", "b")
 
-print(status)
-# Saída: Permitido
+pos = tupla.index("b")
+print(pos)
