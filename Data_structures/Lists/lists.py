@@ -1,5 +1,6 @@
 # Programa para demonstrar operações básicas com listas em Python
-# Este programa apresenta um menu de opções para o usuário realizar diversas operações em uma lista, como adicionar, remover, ordenar, reverter, inserir em posições específicas, limpar e mostrar a lista atual.
+
+
 def main():
     print(
         """
