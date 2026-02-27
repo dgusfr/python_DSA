@@ -1,3 +1,4 @@
+# Programa para demonstrar operações básicas com listas em Python
 def main():
     print(
         """
