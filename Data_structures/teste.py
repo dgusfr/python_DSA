@@ -1,4 +1,5 @@
-  tupla = ("a", "b", "c", "b")
+a = {1, 2, 3, 4}
+b = {3, 4, 5}
 
-  pos = tupla.index("b", 2)
-  print(pos)
+a.intersection_update(b)
+print(a)
