@@ -1,4 +1,4 @@
-tupla = ("a", "b", "c", "b")
+  tupla = ("a", "b", "c", "b")
 
-pos = tupla.index("b")
-print(pos)
+  pos = tupla.index("b", 2)
+  print(pos)
