@@ -33,6 +33,8 @@
 * **Cálculo de Somatório: Iteração vs. Recursão:** `summation_iter_vs_rec.py`
 * **Determinação de Fatorial Inverso:** `inverse_factorial.py`
 
+---
+
 ### Avançado
 
 * **Validação de CPF:** `cpf_validation.py`
