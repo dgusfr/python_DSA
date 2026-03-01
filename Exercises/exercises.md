@@ -37,7 +37,7 @@
 
 ---
 
-### Avançado
+## Avançado
 
 * **Validação de CPF:** `cpf_validation.py`
 * **Números Amigos:** `friend_number.py`
