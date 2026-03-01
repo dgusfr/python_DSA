@@ -21,6 +21,8 @@
 * **Busca em palavra:** `letter_search.py`
 * **Inverter palavra:** `reverse_word.py`
 
+---
+
 ### Intermediário
 
 * **Fatorial de um Número:** `factorial.py`
