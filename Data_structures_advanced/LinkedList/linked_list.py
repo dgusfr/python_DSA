@@ -42,7 +42,7 @@ class LinkedList:
             current_index = current_index + 1
         raise ValueError("{} is not in list".format(data))
 
-    def _getnode(self, index: int):
+    def _get_node(self, index: int):
         if index < 0 or index >= self._size:
             raise IndexError("list index out of range")
         pointer = self.head
@@ -52,7 +52,7 @@ class LinkedList:
             pointer = pointer.next
         return pointer
 
-    def insere_final_lista(self, data):
+    def append(self, data):
         if self.head:
             pointer = self.head
             while pointer.next:
@@ -62,7 +62,7 @@ class LinkedList:
             self.head = Node(data)
         self._size = self._size + 1
 
-    def insere_qualquer_posicao(self, index, data):
+    def insert(self, index, data):
         if index < 0 or index > self._size:
             raise IndexError("list index out of range")
 
@@ -71,11 +71,11 @@ class LinkedList:
             node.next = self.head
             self.head = node
         else:
-            anterior = self._getnode(index - 1)
-            if anterior is None:
+            previous = self._get_node(index - 1)
+            if previous is None:
                 raise IndexError("list index out of range")
-            node.next = anterior.next
-            anterior.next = node
+            node.next = previous.next
+            previous.next = node
         self._size = self._size + 1
 
     def remove(self, data):
@@ -86,15 +86,15 @@ class LinkedList:
             self._size = self._size - 1
             return True
         else:
-            ancestor = self.head
+            previous = self.head
             pointer = self.head.next
             while pointer:
                 if pointer.data == data:
-                    ancestor.next = pointer.next
+                    previous.next = pointer.next
                     pointer.next = None
                     self._size = self._size - 1
                     return True
-                ancestor = pointer
+                previous = pointer
                 pointer = pointer.next
         raise ValueError("{} is not in list".format(data))
 
