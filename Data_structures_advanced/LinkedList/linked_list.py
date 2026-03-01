@@ -6,7 +6,7 @@ class LinkedList:
         self.head = None
         self._size = 0
 
-    def list_size(self):
+    def __len__(self):
         return self._size
 
     def __getitem__(self, posicao_desejada):
