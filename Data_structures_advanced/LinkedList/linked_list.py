@@ -34,12 +34,12 @@ class LinkedList:
 
     def index(self, data):
         pointer = self.head
-        indice = 0
+        current_index = 0
         while pointer:
             if pointer.data == data:
-                return indice
+                return current_index
             pointer = pointer.next
-            indice = indice + 1
+            current_index = current_index + 1
         raise ValueError("{} is not in list".format(data))
 
     def _getnode(self, index: int):
