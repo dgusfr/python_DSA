@@ -1,6 +1,6 @@
 # Exercícios
 
-### Fácil
+## Fácil
 
 * **Quadrado de um número:** `square_of_number.py`
 * **Área de um Retângulo:** `rectangle_area.py`
