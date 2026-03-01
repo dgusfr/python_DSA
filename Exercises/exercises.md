@@ -23,7 +23,7 @@
 
 ---
 
-### Intermediário
+## Intermediário
 
 * **Fatorial de um Número:** `factorial.py`
 * **Cálculo de Fibonacci:** `fibonacci.py`
