@@ -1,4 +1,5 @@
 # Exercícios
+
 ### Fácil
 
 * **Quadrado de um número:** `square_of_number.py`
