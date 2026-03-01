@@ -9,9 +9,9 @@ class LinkedList:
     def __len__(self):
         return self._size
 
-    def __getitem__(self, posicao_desejada):
+    def __getitem__(self, index):
         pointer = self.head
-        for i in range(posicao_desejada):
+        for i in range(index):
             if pointer:
                 pointer = pointer.next
             else:
@@ -20,9 +20,9 @@ class LinkedList:
             return pointer.data
         raise IndexError("list index out of range")
 
-    def __setitem__(self, posicao_desejada, elemento):
+    def __setitem__(self, index, elemento):
         pointer = self.head
-        for i in range(posicao_desejada):
+        for i in range(index):
             if pointer:
                 pointer = pointer.next
             else:
